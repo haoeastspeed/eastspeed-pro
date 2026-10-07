@@ -18,16 +18,26 @@
 
 在 [Releases](https://github.com/haoeastspeed/eastspeed-pro/releases/latest) 中选择：
 
-- **East Speed Pro Setup.exe**：标准安装版（推荐）
-- **East Speed Pro MSI.msi**：MSI 安装包，支持静默安装、可封装进系统镜像
-- **East Speed Pro Portable.zip**：免安装便携版
-- **EastSpeedPro.exe**：单文件可执行版
-- **East Speed LicenseTool.exe**：发码 / 授权管理工具（内部使用）
+- **East-Speed-Pro.exe**：单文件可执行版（开箱即用，推荐）
+- **East-Speed-Pro-Setup.exe**：标准安装版
+- **East-Speed-Pro-MSI.msi**：MSI 安装包，支持静默安装、可封装进系统镜像
+- **East-Speed-Pro-Portable.zip**：免安装便携版
 
-## 自动更新
+### 国内下载加速
 
-- 更新清单：`latest-formal.json`（Ed25519 签名，channel=formal）
-- 国内以 Cloudflare 边缘节点为主：`https://update.eastspeed.dpdns.org/latest-formal.json`，GitHub 直连自动备用，支持断点续传（Range/206）。
+GitHub 直连国内较慢且波动，可按以下顺序选择（文件内容完全一致）：
+
+1. **官方边缘镜像（推荐，稳定、支持多线程/断点续传）**，例如单文件版：
+   - https://update.eastspeed.dpdns.org/pro/East-Speed-Pro.exe
+   - 安装版：https://update.eastspeed.dpdns.org/pro/East-Speed-Pro-Setup.exe
+2. **第三方 GitHub 加速（公益服务，可能限流或关停；若失效请改用上面的官方镜像或 GitHub 直连）**：
+   - https://gh-proxy.com/https://github.com/haoeastspeed/eastspeed-pro/releases/latest/download/East-Speed-Pro.exe
+
+## 自动更新与激活
+
+- 更新清单：`latest-formal.json`（Ed25519 签名，channel=formal）。
+- 国内以 Cloudflare 边缘节点为主：`https://update.eastspeed.dpdns.org/latest-formal.json`，多线程下载，GitHub 直连自动备用，支持断点续传（Range/206）。
+- 激活支持**在线激活**（优先）与**离线激活**两种方式，激活窗口内可切换。
 
 ## 版权
 
